@@ -1,0 +1,9 @@
+Spark Template Scala Project
+
+
+Build:
+$ sbt clean assembly
+
+Run:
+$ spark-submit   --class com.sample.SparkMainApp   --executor-cores 10   --num-executors 7 --executor-memory 8G --driver-memory 4G  --master yarn   --deploy-mode cluster   spark-template-scala-project.jar
+
